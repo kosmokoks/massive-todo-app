@@ -20,11 +20,17 @@ const Task = ({item, dispatch}) => {
     };
 
     const updateNameOnServer = (task) => {
+        if (!task.task) {
+            return;
+        }
         dispatch(updateTaskName(task));
         setIsEditedId(null);
     }
 
     const updateTaskNameOnServerByKeyPress = (e, task) => {
+        if (!task.task) {
+            return;
+        }
         if (e.key === 'Enter') {
             updateNameOnServer(task);
         }

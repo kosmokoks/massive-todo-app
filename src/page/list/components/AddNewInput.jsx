@@ -10,11 +10,17 @@ const AddNewInput = ({showAddNewTaskInput, dispatch}) => {
     }
 
     const addNewTask = (task) => {
+        if (!task.task) {
+            return;
+        }
         dispatch(addTask(task))
         setInputValue('')
     };
 
     const handleKeypress = (e, task) => {
+        if (!task.task) {
+            return;
+        }
         if (e.key === 'Enter') {
             addNewTask(task);
         }
@@ -46,8 +52,10 @@ const AddNewInput = ({showAddNewTaskInput, dispatch}) => {
                                 is_completed: 0,
                             }
                         )}
+                        disabled={!inputValue}
                     >
-                        Add <i className="icon-plus"/>
+                        Add
+                        <i className="icon-plus"/>
                     </button>
                 </div>
             </li>

@@ -8,14 +8,13 @@ import {
     EDIT_TASK_NAME
 } from './actions';
 
-export const getStateRoot = (state) => state.list;
-
 const initialState = {
     items: [],
     isWaiting: false,
 };
 
 const reducer = (state = initialState, action) => {
+    console.log(state.items)
     switch (action.type) {
         case START_WAITING:
             return {...state, isWaiting: true};

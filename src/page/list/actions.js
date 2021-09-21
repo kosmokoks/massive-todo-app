@@ -49,7 +49,9 @@ export const fetchListItems = () => {
         try {
             const response = await fetch(fetchUrl);
             const {data} = await response.json();
-            dispatch(updateResults(data))
+            if (data) {
+                dispatch(updateResults(data))
+            }
         } catch (err) {
             console.error(err);
             dispatch(showModal());

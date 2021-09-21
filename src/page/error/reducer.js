@@ -1,7 +1,5 @@
 import { SHOW_MODAL, HIDE_MODAL} from './actions';
 
-export const getStateRoot = (state) => state.error;
-
 const initialState = {
   isModalVisible: false,
 };
