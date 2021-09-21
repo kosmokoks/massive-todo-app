@@ -10,7 +10,6 @@ Time spent about 6-8hrs
 To run this project, install it locally using npm:
 
 ```
- $ cd massive-todo-app
  $ npm install
 ```
 and then start the app in development mode:
