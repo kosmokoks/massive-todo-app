@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'massive-icons';
+  src:  url('../icons/massive-icons.eot?t72kxf');
+  src:  url('../icons/massive-icons.eot?t72kxf#iefix') format('embedded-opentype'),
+  url('../icons/massive-icons.ttf?t72kxf') format('truetype'),
+  url('../icons/massive-icons.woff?t72kxf') format('woff'),
+  url('../icons/massive-icons.svg?t72kxf#massive-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'massive-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
